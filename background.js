@@ -4,9 +4,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 		return;
 	}
 	
-	if ( tab.url.indexOf('blog.163.com') > -1 ) {
-		chrome.pageAction.show(tabId);
-	}
+	chrome.pageAction.show(tabId);
 };
 
 // Called when click on the button

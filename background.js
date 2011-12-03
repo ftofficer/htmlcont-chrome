@@ -1,6 +1,6 @@
 // Called when the url of a tab changes.
 function checkForValidUrl(tabId, changeInfo, tab) {
-	if ( tab.url.indexOf('http://sharp-cloud-6961.heroku.com/') > -1 ) {
+	if ( tab.url.indexOf('http://htmcont.heroku.com/') > -1 ) {
 		return;
 	}
 	
@@ -11,7 +11,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 function onButtonClicked(tab) {
 	request = {
 		"code": "redirect",
-		"url": 'http://sharp-cloud-6961.heroku.com/conts/g?link=' + tab.url
+		"url": 'http://htmcont.heroku.com/conts/g?link=' + tab.url
 	};
 	chrome.tabs.sendRequest(tab.id, request, null);
 }

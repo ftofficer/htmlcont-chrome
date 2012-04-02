@@ -11,7 +11,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 function onButtonClicked(tab) {
 	request = {
 		"code": "redirect",
-		"url": 'http://htmcont.heroku.com/conts/g?link=' + tab.url
+		"url": 'http://didaread.com/g?link=' + tab.url
 	};
 	chrome.tabs.sendRequest(tab.id, request, null);
 }

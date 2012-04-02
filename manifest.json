@@ -1,6 +1,6 @@
 {
-  "name": "Clean Read",
-  "version": "1.0.0.2",
+  "name": "DidaRead",
+  "version": "1.0.0.3",
   "description": "Extract and reflow page suitable for reading.",
   "background_page": "background.html",
   "page_action":

@@ -1,6 +1,6 @@
 // Called when the url of a tab changes.
 function checkForValidUrl(tabId, changeInfo, tab) {
-	if ( tab.url.indexOf('http://htmcont.heroku.com/') > -1 ) {
+	if ( !tab.url.match(/.htm$/) && !tab.url.match(/.html$/)) {
 		return;
 	}
 	
